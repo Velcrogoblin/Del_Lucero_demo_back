@@ -17,7 +17,7 @@ router
   .get("/", getAllClients)
   .get("/id/:id", getClientById)
   .get("/name/", getClientByName)
-  .post("/", verifyToken, postClient)
+  .post("/", postClient)
   .put("/edit/", verifyToken, putClient)
   .put("/delete/:id", verifyToken, deleteClient);
 
