@@ -16,7 +16,7 @@ const router = Router();
 router
   .get("/", getAllOrders)
   .get("/id/:id", getOrderById)
-  .post("/", verifyToken, postOrder)
+  .post("/", postOrder)
   .put("/", verifyToken, putOrder)
   .put("/delete", verifyToken, deleteOrder);
 

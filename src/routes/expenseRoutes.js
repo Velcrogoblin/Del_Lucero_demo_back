@@ -17,7 +17,7 @@ router
   .get("/", getAllExpenses)
   .get("/id/:id", getExpenseById)
   .get("/name/", getExpenseByName)
-  .post("/", verifyToken, postExpense)
+  .post("/", postExpense)
   .put("/", verifyToken, putExpense)
   .delete("/:id", verifyToken, deleteExpense);
 

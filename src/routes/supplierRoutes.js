@@ -17,7 +17,7 @@ router
   .get("/", getAllSuppliers)
   .get("/id/:id", getSupplierById)
   .get("/name/", getSupplierByName)
-  .post("/", verifyToken, postSupplier)
+  .post("/", postSupplier)
   .put("/", verifyToken, putSupplier)
   .put("/delete/:id", verifyToken, deleteSupplier);
 

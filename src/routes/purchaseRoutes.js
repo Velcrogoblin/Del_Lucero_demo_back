@@ -11,6 +11,6 @@ const router = Router();
 
 router
   .get("/", getAllPurchases)
-  .post("/", verifyToken, postPurchase);
+  .post("/", postPurchase);
 
 module.exports = router;

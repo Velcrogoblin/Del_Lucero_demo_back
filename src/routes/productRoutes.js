@@ -16,7 +16,7 @@ router
   .get("/", getAllProducts)
   .get("/id/:id", getProductById)
   .get("/name/", getProductByName)
-  .post("/", verifyToken, postProduct)
+  .post("/", postProduct)
   .put("/edit", verifyToken, putProduct)
   .put("/delete/:id", verifyToken, deleteProduct);
 
